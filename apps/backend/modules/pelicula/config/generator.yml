@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Pelicula
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Pelicula
+    plural:                Peliculas
+    route_prefix:          pelicula
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Gestión de Peliculas
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Editando %%name%%
+      new:     
+        title: Nueva Película

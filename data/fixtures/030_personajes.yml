@@ -1,0 +1,127 @@
+# data/fixtures/030_personajes.yml
+Personaje:
+  han:
+    name:        Han Solo
+    summary:     |
+        Han Solo era un arrogante corelliano con un ingenio sardónico, humor seco, una disposición a veces imprudente, y el sentido común tecnológico, que comenzó su carrera como contrabandista alrededor del 10 ABY.
+    raza_id:     humano
+    photo:       han.jpg
+  luke:
+    name:        Luke Skywalker
+    summary:     |
+        Luke Skywalker fue un legendario héroe de guerra y Jedi que fundó la Nueva Orden Jedi. Era el hijo del Caballero Jedi Anakin Skywalker y la senadora Padmé Amidala de Naboo, y el hermano mellizo de Leia Organa Solo. Se unió a la Alianza para Restaurar la República y su más grande hazaña fue destruir la primera Estrella de la Muerte. También fue responsable de influenciar a Darth Vader, el Señor Sith que fue su padre, para que matara al Emperador Palpatine, iniciando el camino para la caída del Imperio Galáctico y la formación de la Nueva República. Después fue ascendido a general, aunque dejó al ejército para convertirse en un miembro influyente de la Nueva República y un prominente Maestro Jedi.
+    raza_id:     humano
+    photo:       luke.jpg
+  leia:
+    name:        Leia Organa
+    summary:     |
+        Leia Organa Solo (nacida Leia Amidala Skywalker) fue en diversas etapas de su vida política, revolucionaria y Dama Jedi de la Nueva Orden Jedi. Hija del General Jedi Anakin Skywalker y la senadora Padmé Amidala de Naboo, Leia fue la hermana melliza de Luke Skywalker, y poco después de su nacimiento se convirtió en la hija adoptiva de Bail Prestor Organa y la reina Breha Antilles Organa de Alderaan, convirtiéndola en princesa de Alderaan. Una senadora consumada, Leia fue famosa por su fuerte liderazgo durante la Guerra Civil Galáctica y otros conflictos galácticos posteriores, haciéndola uno de los héroes más grandes de la galaxia. Ella se casó con Han Solo y se convirtió en la madre de sus tres hijos: Jaina, Jacen y Anakin Solo. En el inicio de la Guerra del Enjambre, Leia sin saberlo se convirtió en abuela a través de la hija de Jacen, Allana.
+    raza_id:     humano
+    photo:       leia.jpg
+  anakin:
+    name:        Anakin Skywalker
+    summary:     |
+        Anakin Skywalker fue un legendario Caballero Jedi humano, que sirvió a la República Galáctica durante sus últimos días, y posteriormente se convirtió en el Lord Sith Darth Vader. Era el hijo de Shmi Skywalker. Durante su vida adulta, se convirtió en el esposo secreto de la Senadora Padmé Amidala de Naboo, y el padre de los legendarios Jedi Luke Skywalker y Leia Organa Solo. También fue el abuelo de Ben Skywalker, y Jaina, Jacen, y Anakin Solo. Era el tatarabuelo de Allana, y antepasado de Nat, Kol, y Cade Skywalker.
+    raza_id:     humano
+    photo:       anakin.jpg
+  kenobi:
+    name:        Obi-Wan Kenobi
+    summary:     |
+        Obi-Wan Kenobi, más tarde conocido como Ben Kenobi durante su exilio, fue un legendario Maestro Jedi que jugó un rol significante en el destino de la Galaxia durante los últimos días de la República Galáctica. Fue el responsable de las muertes de Darth Maul y el General Grievous, y contribuyó a las muertes de Darth Tyranus, Darth Vader, y Darth Sidious entrenando a Anakin y Luke Skywalker en los caminos de la Fuerza. Kenobi tuvo una larga y tumultuosa carrera que ayudó a modelar el destino de la Galaxia.
+    raza_id:     humano
+    photo:       kenobi.jpg
+  palpatine:
+    name:        Palpatine
+    summary:     |
+        Palpatine, también conocido como Darth Sidious, fue un humano sensible a la Fuerza que sirvió como el último Canciller de la República Galáctica y el primer Emperador del Imperio Galáctico. Fue un Señor Oscuro de los Sith que seguía la Regla de Dos, un antiguo principio de la Orden de los Lores Sith, y fue el Lord Sith más poderoso en la historia galáctica. Su vida entera como Sith fue la culminación de un plan de mil años para derrocar a la República y a la Orden Jedi desde adentro. Como Palpatine y como Sidious, el Lord Sith fue responsable de convertir la Crisis Separatista en un conflicto a escala galáctica, las Guerras Clon, que comenzó cuando la rebelde Confederación de Sistemas Independientes desafió a la República por el control de la galaxia.
+    raza_id:     humano
+    photo:       palpatine.jpg
+  tarfful:
+    name:        Tarfful
+    summary:     |
+        Tarfful fue un alto líder wookiee y arrojado en el combate, que dirigió la defensiva y luchó personalmente en la batalla de Kashyyyk defendiendo así la ciudad que lideró durante décadas, Kachirho, la capital del planeta. Colaboró con la República Galáctica en este conflicto de las Guerras Clon mientras que la Confederación de Sistemas Independientes los invadió con la intención de quedarse el planeta y esclavizar a los wookiees.
+    raza_id:     wookiee
+    photo:       tarfful.jpg
+  chewbacca:
+    name:        Chewbacca
+    summary:     |
+        Chewbacca (o Chewie, como le decían sus amigos) era un legendario wookiee de Kashyyyk y copiloto de la nave de Han Solo, el Halcón Milenario. Era el hijo de Attichitcuk, el esposo de Mallatobuck y el padre de Lumpawaroo. Chewbacca llevaba consigo el nombre del antiguo héroe wookiee, el gran Bacca, el primero de los grandes caciques de Kashyyyk, y el creador de una espada que indicaba el liderazgo entre los wookiees. Este nombre indicaba que Chewbacca pertenecía a un noble linaje, lo que fue corroborado por su rol en Kashyyyk durante las Guerras Clon y durante la Guerra Civil Galáctica.
+    raza_id:     wookiee
+    photo:       chewbacca.jpg
+  maul:
+    name:        Darth Maul
+    summary:     |
+        Darth Maul fue un Zabrak Dathomiriano varón Señor Oscuro de los Sith que vivió durante las últimas décadas de la República Galáctica. Originalmente un hermano de la noche Dathomiri nacido en Iridonia y conocido únicamente como Maul, fue entregado como un niño, por su madre hermana de la noche a Darth Sidious, quien lo entrenó en los caminos del lado oscuro de la Fuerza como su aprendiz secreto. Maul se convirtió en una maestro del Juyo, Jar'Kai, y Teräs Käsi, con entrenamiento en Niman; Maul se construyó un sable de luz de doble hoja rojo para usar en combate, algo que se consideraba difícil de hacer.
+    raza_id:     zabrak
+    photo:       maul.jpg
+  c3po:
+    name:        C-3PO
+    summary:     |
+        C-3PO era un droide de protocolo serie 3PO, diseñado para interactuar con humanos. Hablaba con fluidez más de seis millones de formas de comunicación, y desarrolló una exigente y preocupada personalidad a lo largo de sus varias décadas de operación. Tras ser destruido y desechado en Tatooine antes de 32 ABY, C-3PO fue reconstruido; su naturaleza reconstruida lo hizo diferente de otros modelos similares de droides. Junto a su compañero, el droide astromecánico R2-D2, C-3PO constantemente se vio involucrado en momentos esenciales de la historia galáctica, y ayudó a salvar la galaxia en muchas ocasiones. C-3PO consideraba a varios droides y seres orgánicos como amigos suyos, y era muy dedicado a ellos, así como a sus amos.
+    raza_id:     androide
+    photo:       c3po.jpg
+  r2d2:
+    name:        R2-D2
+    summary:     |
+        R2-D2 (fonéticamente en inglés Artoo-Detoo o Artoo, y en español Erredós-Dedós) fue un droide astromecánico y, sin duda, la unidad más famosa de la serie R2. Un viejo amigo y colega fue el droide de protocolo C-3PO, que sirvió a la familia Skywalker fielmente por muchos años. Junto con su ingenio, R2-D2 fue equipado por su propietario original, la Casa Real de Naboo, con la herramienta con punta de muchos apéndices que le permitió servir como un mecánico en naves superiores y especialista en el interfaz de la computadora. R2-D2 a menudo se metía en situaciones peligrosas sin pensarlo dos veces, con el fin de prestar ayuda a sus amos. Esto a menudo cambiaba el curso de la historia galáctica.
+    raza_id:     androide
+    photo:       r2d2.jpg
+  binks:
+    name:        Jar Jar Binks
+    summary:     |
+        Jar Jar Binks, fue el primer gungan en representar a su pueblo en el Senado Galáctico, primero como representante menor junto a la senadora Padmé Amidala y después de su muerte como senador. Como la mayoría de los gungans, Jar Jar hablaba básico con un acento característico. A pesar de ser ingenuo, estúpido y torpe, Jar Jar Binks contribuyó enormemente al sino de la República Galáctica, para bien y para mal.
+    raza_id:     gungan
+    photo:       binks.jpg
+  ackbar:
+    name:        Gial Ackbar
+    summary:     |
+        Gial Ackbar era un alienígena mon calamari, del planeta del mismo nombre. Almirante de la flota de la Alianza Rebelde y enemigo acérrimo del Imperio. En los tiempos de la Antigua República Galáctica sirvió guiando a su pueblo como líder del Consejo Mon Calamari. Fue posteriormente esclavizado con el advenimiento del Imperio y terminó como esclavo del Gran Moff Tarkin. Con Tarkin aprendió todas los conocimientos necesarios para dirigir flotas, así como todo lo que el Gran Moff Tarkin sabía de táctica y estrategia militar. Accedió a estos conocimientos dado la costumbre de Tarkin de alardear de sus brillantes planes de conquista delante de su esclavo. Cuando Ackbar fue liberado, se unió a la Alianza Rebelde, donde pudo usar los conocimientos adquiridos para convertirse en un gran líder de flota.
+    raza_id:     calamari
+    photo:       ackbar.jpg
+  kiadimundi:
+    name:        Ki-Adi-Mundi
+    summary:     |
+        Ki-Adi-Mundi fue un Maestro Jedi cereano que sirvió en el Alto Consejo Jedi en los últimos años de la República Galáctica y jugó un papel mayor en varias batallas durante las Guerras Clon. Nacido en 92 ABY, Mundi fue descubierto a los cuatro años por la Jedi An'ya Kuro y se convirtió en uno de los pocos a quienes la Orden Jedi les permitió ser entrenados habiendo comenzado más allá de la infancia. 
+    raza_id:     cereano
+    photo:       cereano.jpg
+  yoda:
+    name:        Maestro Yoda
+    summary:     |
+        Yoda era uno de los más renombrados y poderosos Maestros Jedi durante toda la historia de la Galaxia, y uno de los pocos Jedis de la República Galáctica en sobrevivir hasta la Guerra Civil Galáctica. El maestro más perceptivo de la Orden, él fungió como Gran Maestro durante las Guerras Clónicas y la fundación del Imperio Galáctico, después de la cual escapó para ocultarse de la Gran Purga Jedi. Aunque Yoda era uno de los miembros más respetados de la Orden, no era perfecto. Fue parcialmente debido a su falta de visión que la Orden Jedi fue destruida por el Señor Sith Darth Sidious, y la República reemplazada por el Imperio. Aún así, corregiría sus errores al jugar un rol importante en los eventos galácticos posteriores, entrenando a Luke Skywalker durante la Guerra Civil Galáctica. Después de su muerte en el 4 DBY, se convirtió en uno con la Fuerza.
+    raza_id:     desconocido
+    photo:       yoda.jpg
+  jabba:
+    name:        Jabba el Hutt
+    summary:     |
+        Jabba Desilijic Tiure, mejor conocido como Jabba el hutt, fue uno de los señores del crimen hutt más conocidos en la galaxia, que gobernó un gran imperio criminal localizado en los Territorios del Borde Exterior desde su palacio del desierto en Tatooine. En el apogeo de su poder, Jabba fue uno de los señores del crimen más poderosos de la galaxia, incluso tenía contacto con el Príncipe Xizor, el líder del Sindicato Sol Negro.
+    raza_id:     hutt
+    photo:       hutt.jpg
+  watto:
+    name:        Watto
+    summary:     |
+        Watto fue un robusto toydariano de piel azul con un rápido movimiento en sus alas que lo mantienen suspendido alrededor de un metro por encima del suelo. Este comerciante no solo tenía una destreza para el regateo sino que además no podía ser afectado por los trucos mentales Jedi.
+    raza_id:     toydariano
+    photo:       watto.jpg
+  nutegunray:
+    name:        Nute Gunray
+    summary:     |
+        Nute Gunray, Virrey de la Federación de Comercio. Ha estado implicado en incontables operaciones ilegales, financiando actividades totalmente inmorales, e incluso ha colaborado con al menos tres lores del Sith en un tiempo en que éstos estaban supuestamente extintos.
+    raza_id:     neimoidiano
+    photo:       nutegunray.jpg
+  dofine:
+    name:        Daultay Dofine
+    summary:     |
+        Daultay Dofine fue un Neimoidiano nacido de una familia influyente, que le permitió abrirse paso fácilmente entre los cargos de la Federación de Comercio, utilizando las conexiones de su familia o poder que le otorgase el status, Daultay tenía una forma de ser muy detestable, característico de los neimoidianos, cobarde, falso, además de ser un lambiscón, que le ayudó a obtener promociones en su carrera, a pesar de ser poco competente y falto de experiencia militar.
+    raza_id:     neimoidiano
+    photo:       dofine.jpg
+  quigon:
+    name:        Qui-Gon Jinn
+    summary:     |
+        Qui-Gon Jinn es un personaje de la Guerra de las Galaxias que aparece en el Episodio I de la saga. Fue interpretado por el actor irlandés Liam Neeson. Qui-Gon fue un noble Caballero Jedi en los tiempos de la Antigua República. Fue instruido por una eminencia de la Orden Jedi: el Maestro Dooku. Jinn se adiestró como un hombre serio, generoso y amable, pero también desarrolló un criterio propio y cierta testarudez que en la mayoría de las ocasiones no eran del agrado del Consejo Jedi.
+    raza_id:     humano
+    photo:       quigon.jpg
+
+  
+    
+  
+  

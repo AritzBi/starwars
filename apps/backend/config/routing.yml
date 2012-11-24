@@ -1,0 +1,52 @@
+participacion:
+  class: sfPropelRouteCollection
+  options:
+    model:                Participacion
+    module:               participacion
+    prefix_path:          /participacion
+    column:               id
+    with_wildcard_routes: true
+
+raza:
+  class: sfPropelRouteCollection
+  options:
+    model:                Raza
+    module:               raza
+    prefix_path:          /raza
+    column:               id
+    with_wildcard_routes: true
+
+pelicula:
+  class: sfPropelRouteCollection
+  options:
+    model:                Pelicula
+    module:               pelicula
+    prefix_path:          /pelicula
+    column:               id
+    with_wildcard_routes: true
+
+personaje:
+  class: sfPropelRouteCollection
+  options:
+    model:                Personaje
+    module:               personaje
+    prefix_path:          /personaje
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: personaje, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

@@ -1,0 +1,27 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Personaje
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Personaje
+    plural:                Personajes
+    route_prefix:          personaje
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Lista de personajes
+        sort: [name]
+        max_per_page: 20
+        display: [=id, =name, =summary, =raza, =photo]
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Editando %%name%%
+      new:     
+        title: Creando un nuevo personaje

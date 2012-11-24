@@ -1,0 +1,44 @@
+# data/fixtures/020_peliculas.yml
+Pelicula:
+  episodei:
+    name:        Star Wars: Episode I - La Amenaza Fantasma
+    summary:     |
+        Situada en el tiempo treinta años antes que "Star Wars" (La guerra de las galaxias-, 1977), "La amenaza fantasma" desvela la infancia de Darth Vader, el pasado de Obi-Wan Kenobi y el resurgimiento de los Sith, los caballeros Jedi dominados por el Lado Oscuro. La Federación de Comercio ha bloqueado el pequeño planeta de Naboo, gobernado por la joven Reina Amidala, como parte de un plan ideado por Sith Darth Sidious, que manteniéndose en el anonimato dirige a los neimoidianos, que están al mando de la Federación. Amidala es convencida por los Jedis Qui-Gon Jinn y su aprendiz, o padawan, Obi-Wan Kenobi a viajar hasta Coruscant, capital de la República y sede del Consejo Jedi para intentar mediar esta amenaza. Pero esquivando el bloqueo, la nave real resulta dañada, obligando a la tripulación a aterrizar en el desértico y remoto planeta de Tatooine. 
+    premiere_date: 1999-05-19 22:00:00
+    photo:       episodeI.jpg
+    slug:        episode1
+  episodeii:
+    name:        Star Wars: Episode II - El Ataque de los Clones
+    summary:     |
+        Corren tenebrosos tiempos para la República. Ésta continúa envuelta en luchas y sumida en el caos. Un movimiento separatista, formado por centenares de planetas y poderosas alianzas y y lideradas por el misterioso conde Dooku, abre nuevas amenazas para la galaxia, a la que ni siquiera los Jedi parecen poder poner freno. Estas maniobras, planeadas hace mucho por una poderosa fuerza, conducen al estallido de las guerras clones y al principio del fin de la República. Para allanar el camino, los separatistas intentan asesinar a la senadora Padme Amidala. Para evitar futuros atentados, su seguridad es encomendada a dos caballeros Jedi. 
+    premiere_date: 2002-05-16 22:00:00
+    photo:       episodeII.jpg
+    slug:        episode2
+  episodeiii:
+    name:        Star Wars: Episode III - La Venganza de los Sith
+    summary:     |
+        Último capítulo de la saga de Star Wars, en el que Anakin Skywalker definitivamente se pasa al lado oscuro. En el Episodio III aparecerá el General Grievous, un ser implacable mitad-alien mitad-robot, el líder del ejército separatista Droid. Los Sith son los amos del lado oscuro de la Fuerza y los enemigos de los Jedi. Ellos fueron prácticamente exterminados por los Jedi hace mil años, pero la orden del mal sobrevivió en la clandestinidad. 
+    premiere_date: 2005-05-19 22:00:00
+    photo:       episodeIII.jpg
+    slug:        episode3
+  episodeiv:
+    name:        Star Wars: Episode IV - Una Nueva Esperanza
+    summary:     |
+        Los caballeros Jedi han sido exterminados y el Imperio gobierna la galaxia con mano de hierro. Sólo un pequeño grupo de rebeldes se atreve a resistir, pero su líder, la princesa Leia, ha sido capturada. La señal de socorro es interceptada por un simple granjero, Luke Skywalker, quien acepta el desafío de rescatarla. 
+    premiere_date: 1977-05-25 22:00:00
+    photo:       episodeIV.jpg
+    slug:        episode4
+  episodev:
+    name:        Star Wars: Episode V - El Imperio Contraataca
+    summary:     |
+        Huyendo del maligno Imperio Galactico, los rebeldes abandonan su nueva base en Hoth. La Princesa Leia, Han Solo y los androides R2-D2 y C-3P0 escapan en el averiado Halcon Milenio, pero luego son capturados por Darth Vader en Bespin. Mientras tanto Luke Skywalker obedece las intrucciones del fallecido Ben Kenobi y recibe entrenamiento Jedi de parte de Yoda en Dagobah. Podra Skywalker rescatar a sus amigos del control de Darth Vader? 
+    premiere_date: 1980-05-21 22:00:00
+    photo:       episodeV.jpg
+    slug:        episode5
+  episodevi:
+    name:        Star Wars: Episode VI - El Retorno del Jedi
+    summary:     |
+        Luke Skywalker y la princesa Leia deben viajar a Tatooine para liberar a Han Solo. Para conseguirlo, deben infiltrarse en la peligrosa guarida de Jabba the Hutt, el gángster más temido de la galaxia. Una vez reunidos, el equipo recluta a tribus de Ewoks para combatir a las fuerzas imperiales en los bosques de la luna de Endor. Mientras tanto, el Emperador y Darth Vader conspiran para convertir a Luke al lado oscuro, pero el joven Skywalker, por su parte, está decidido a reavivar el espíritu del Jedi en su padre. La guerra civil galáctica culmina en un último enfrentamiento entre las fuerzas rebeldes unificadas y una segunda Estrella de la Muerte, indefensa e incompleta, en una batalla que decidirá el destino de la galaxia.
+    premiere_date: 1983-05-25 22:00:00
+    photo:       episodeVI.jpg
+    slug:        episode6

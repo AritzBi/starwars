@@ -1,0 +1,73 @@
+# data/fixtures/040_participaciones.yml
+Participacion:
+  han4:        { personaje_id: han, pelicula_id: episodeiv}
+  han5:       { personaje_id: han, pelicula_id: episodev}
+  han6:        { personaje_id: han, pelicula_id: episodevi}
+  luke4:        { personaje_id: luke, pelicula_id: episodeiv}
+  luke5:      { personaje_id: luke, pelicula_id: episodev}
+  luke6:      { personaje_id: luke, pelicula_id: episodevi}
+  leia4:      { personaje_id: leia, pelicula_id: episodeiv}
+  leia5:      { personaje_id: leia, pelicula_id: episodev}
+  leia6:      { personaje_id: leia, pelicula_id: episodevi}
+  anakin1:      { personaje_id: anakin, pelicula_id: episodei}
+  anakin2:      { personaje_id: anakin, pelicula_id: episodeii}
+  anakin3:      { personaje_id: anakin, pelicula_id: episodeiii}
+  anakin4:      { personaje_id: anakin, pelicula_id: episodeiv}
+  anakin5:      { personaje_id: anakin, pelicula_id: episodev}
+  anakin6:      { personaje_id: anakin, pelicula_id: episodevi}
+  kenobi1:      { personaje_id: kenobi, pelicula_id: episodei}
+  kenobi2:      { personaje_id: kenobi, pelicula_id: episodeii}
+  kenobi3:      { personaje_id: kenobi, pelicula_id: episodeiii}
+  kenobi4:      { personaje_id: kenobi, pelicula_id: episodeiv}
+  kenobi5:      { personaje_id: kenobi, pelicula_id: episodev}
+  kenobi6:      { personaje_id: kenobi, pelicula_id: episodevi}
+  palpatine1:      { personaje_id: palpatine, pelicula_id: episodei}
+  palpatine2:      { personaje_id: palpatine, pelicula_id: episodeii}
+  palpatine3:      { personaje_id: palpatine, pelicula_id: episodeiii}
+  palpatine5:      { personaje_id: palpatine, pelicula_id: episodev}
+  palpatine6:      { personaje_id: palpatine, pelicula_id: episodevi}
+  chewbacca3:      { personaje_id: chewbacca, pelicula_id: episodeiii}
+  chewbacca4:      { personaje_id: chewbacca, pelicula_id: episodeiv}
+  chewbacca5:      { personaje_id: chewbacca, pelicula_id: episodev}
+  chewbacca6:      { personaje_id: chewbacca, pelicula_id: episodevi}
+  tarfful3:      { personaje_id: tarfful, pelicula_id: episodeiii}
+  maul1:      { personaje_id: maul, pelicula_id: episodei}
+  c3po1:      { personaje_id: c3po, pelicula_id: episodei}
+  c3po2:      { personaje_id: c3po, pelicula_id: episodeii}
+  c3po3:      { personaje_id: c3po, pelicula_id: episodeiii}
+  c3po4:      { personaje_id: c3po, pelicula_id: episodeiv}
+  c3po5:      { personaje_id: c3po, pelicula_id: episodev}
+  c3po6:     { personaje_id: c3po, pelicula_id: episodevi}
+  r2d21:      { personaje_id:  r2d2, pelicula_id: episodei}
+  r2d22:      { personaje_id:  r2d2, pelicula_id: episodeii}
+  r2d23:      { personaje_id:  r2d2, pelicula_id: episodeiii}
+  r2d24:      { personaje_id:  r2d2, pelicula_id: episodeiv}
+  r2d25:      { personaje_id:  r2d2, pelicula_id: episodev}
+  r2d26:      { personaje_id:  r2d2, pelicula_id: episodevi}
+  binks1:      { personaje_id: binks, pelicula_id: episodei}
+  binks2:      { personaje_id: binks, pelicula_id: episodeii}
+  binks3:      { personaje_id: binks, pelicula_id: episodeiii}
+  ackbar6:     { personaje_id: ackbar, pelicula_id: episodevi}
+  kiadimundi1:      { personaje_id: kiadimundi, pelicula_id: episodei}
+  kiadimundi2:      { personaje_id: kiadimundi, pelicula_id: episodeii}
+  kiadimundi3:      { personaje_id: kiadimundi, pelicula_id: episodeiii}
+  yoda1:      { personaje_id: yoda, pelicula_id: episodei}
+  yoda2:      { personaje_id: yoda, pelicula_id: episodeii}
+  yoda3:      { personaje_id: yoda, pelicula_id: episodeiii}
+  yoda4:      { personaje_id: yoda, pelicula_id: episodeiv}
+  yoda5:      { personaje_id: yoda, pelicula_id: episodev}
+  yoda6:      { personaje_id: yoda, pelicula_id: episodevi}
+  jabba1:      { personaje_id: jabba, pelicula_id: episodei}
+  jabba4:      { personaje_id: jabba, pelicula_id: episodeiv}
+  jabba6:      { personaje_id: jabba, pelicula_id: episodevi}
+  watto1:      { personaje_id: watto, pelicula_id: episodei}
+  watto2:      { personaje_id: watto, pelicula_id: episodeii}
+  dofine1:      { personaje_id: dofine, pelicula_id: episodei}
+  nutegunray1:      { personaje_id: nutegunray, pelicula_id: episodei}
+  nutegunray2:      { personaje_id: nutegunray, pelicula_id: episodeii}
+  nutegunray3:      { personaje_id: nutegunray, pelicula_id: episodeiii}
+  quigon1:      { personaje_id: quigon, pelicula_id: episodei}
+  
+  
+  
+  

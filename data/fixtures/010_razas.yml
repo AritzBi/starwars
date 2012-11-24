@@ -1,0 +1,13 @@
+# data/fixtures/010_razas.yml
+Raza:
+  humano:        { name: Humano, slug: humano }
+  wookiee:       { name: Wookiee, slug: wookie}
+  zabrak:        { name: Zabrak, slug: zabrak}
+  gungan:        { name: Gungan, slug: gungan}
+  androide:      { name: Androide, slug: androide}
+  neimoidiano:   { name: Neimoidiano, slug: neimoidiano}
+  desconocido:   { name: Desconocido, slug: desconocido}
+  hutt:   		 { name: Hutt, slug: hutt}
+  calamari:   	 { name: Mon Calamari, slug: calamari}
+  cereano:       { name: Cereano, slug: cereano}
+  toydariano:    { name: Toydariano, slug: toydariano}

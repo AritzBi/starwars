@@ -1,0 +1,22 @@
+# config/schema.yml
+propel:
+  pelicula:
+    id:           ~
+    name:       { type: varchar(255), required: true, index: unique }
+    summary:      { type: longvarchar, required: true}
+    premiere_date: { type: date, required: true }
+    photo:        { type: varchar(255), required: true, index: unique }
+    slug:         { type: varchar(255), required: true, index: unique } 
+  raza:
+    id:           ~
+    name:         { type: varchar(255), required: true, index: unique }
+    slug:         { type: varchar(255), required: true, index: unique } 
+  personaje:
+    id:           ~
+    name:         { type: varchar(255), required: true, index: unique }
+    summary:      { type: longvarchar, required: true}
+    raza_id:      { type: integer, foreignTable: raza, foreignReference: id, required: true }
+    photo:        { type: varchar(255), required: true, index: unique }
+  participacion:
+    personaje_id: { type: integer, foreignTable: personaje, foreignReference: id, onDelete: cascade }
+    pelicula_id:  { type: integer, foreignTable: pelicula, foreignReference: id, onDelete: cascade }

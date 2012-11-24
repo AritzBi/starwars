@@ -1,0 +1,33 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+localized_homepage:
+  url:   /:sf_culture
+  param: {module: personaje, action: front }
+  requirements: 
+    sf_culture: (?:en|es) 
+homepage:
+  url:   /
+  param: { module: personaje, action: front }
+
+raza:
+  url:      /raza/:slug
+  class:    sfPropelRoute
+  param:    { module: raza, action: show }
+  options:  { model: Raza, type: object }
+  
+rss:
+  url:    /rss/all
+  param: { module: pelicula, action: rss, sf_format: xml }
+  requirements:
+    sf_method: [get]
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

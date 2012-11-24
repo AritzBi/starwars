@@ -1,0 +1,26 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Participacion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Participacion
+    plural:                Participacions
+    route_prefix:          participacion
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Participaciones
+        max_per_page: 20
+        display: [=personaje, =pelicula]
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Editando las Participaciones
+      new:     
+        title: Creando una nueva participaci&(ó)acute;n

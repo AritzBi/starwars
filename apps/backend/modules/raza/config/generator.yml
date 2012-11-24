@@ -1,0 +1,24 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Raza
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Raza
+    plural:                Razas
+    route_prefix:          raza
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Gestión de Razas
+      filter:  ~
+      form:    ~
+      edit:    
+        title: Editando %%name%%
+      new:     
+        title: Nueva raza
