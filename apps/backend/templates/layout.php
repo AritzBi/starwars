@@ -47,7 +47,6 @@ Released   : 20120528
 		</div>
 	</div>
 </div>
-<div id="banner"><img src="images/Untitled-3.jpg" width="1000" height="400" alt="" /></div>
 <div id="wrapper">
     		<div id="page-bgtop">
 			<div id="page-bgbtm">

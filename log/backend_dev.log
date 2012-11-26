@@ -27342,3 +27342,78 @@ Nov 18 10:52:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Fou
 Nov 18 10:52:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
 Nov 18 10:52:50 symfony [info] {sfWebDebugLogger} Configuration 2.59 ms (5)
 Nov 18 10:52:50 symfony [info] {sfWebDebugLogger} Factories 30.70 ms (1)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Nov 26 11:15:54 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'personaje',  'action' => 'index',)
+Nov 26 11:15:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 11:15:56 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Nov 26 11:15:56 symfony [info] {sfBasicSecurityFilter} Action "personaje/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Nov 26 11:15:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 11:15:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 11:15:57 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Nov 26 11:15:57 symfony [info] {sfPHPView} Render "C:/wamp/www/starwars/plugins/sfGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Nov 26 11:15:57 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\backend\templates/layout.php"
+Nov 26 11:15:57 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\backend\templates/layout.php"
+Nov 26 11:15:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 11:15:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 11:15:57 symfony [info] {sfWebDebugLogger} Configuration 6070.03 ms (14)
+Nov 26 11:15:57 symfony [info] {sfWebDebugLogger} Factories 1372.39 ms (1)
+Nov 26 11:15:57 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 313.06 ms (1)
+Nov 26 11:15:57 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 318.55 ms (1)
+Nov 26 11:15:57 symfony [info] {sfWebResponse} Send content (37202 o)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Nov 26 11:16:09 symfony [info] {sfPatternRouting} Match route "raza" (/raza.:sf_format) for /raza with parameters array (  'module' => 'raza',  'action' => 'index',  'sf_format' => 'html',)
+Nov 26 11:16:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 11:16:10 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+Nov 26 11:16:10 symfony [info] {sfBasicSecurityFilter} Action "raza/index" requires authentication, forwarding to "sfGuardAuth/signin"
+Nov 26 11:16:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 11:16:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 11:16:10 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Nov 26 11:16:10 symfony [info] {sfPHPView} Render "C:/wamp/www/starwars/plugins/sfGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Nov 26 11:16:10 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\backend\templates/layout.php"
+Nov 26 11:16:10 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\backend\templates/layout.php"
+Nov 26 11:16:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 11:16:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 11:16:10 symfony [info] {sfWebDebugLogger} Configuration 689.37 ms (15)
+Nov 26 11:16:10 symfony [info] {sfWebDebugLogger} Factories 419.91 ms (1)
+Nov 26 11:16:10 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 26.69 ms (1)
+Nov 26 11:16:10 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 38.82 ms (1)
+Nov 26 11:16:10 symfony [info] {sfWebResponse} Send content (37512 o)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user" (/sf_guard_user.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_new" (/sf_guard_user/new.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_create" (/sf_guard_user.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_edit" (/sf_guard_user/:id/edit.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_update" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_delete" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_show" (/sf_guard_user/:id.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_object" (/sf_guard_user/:id/:action.:sf_format)
+Nov 26 11:16:11 symfony [info] {sfPatternRouting} Connect sfPropelRoute "sf_guard_user_collection" (/sf_guard_user/:action/action.:sf_format)
+Nov 26 11:16:11 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/Untitled-3.jpg" (/).
+Nov 26 11:16:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Nov 26 11:16:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 11:16:11 symfony [info] {sfWebDebugLogger} Configuration 27.76 ms (5)
+Nov 26 11:16:11 symfony [info] {sfWebDebugLogger} Factories 223.10 ms (1)

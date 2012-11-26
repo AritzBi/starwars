@@ -1,7 +1,8 @@
 <h1>Personajes</h1>
 <br/>
-<div id="slider" class="hidden">
+<ul id="slider" class="anythingSlider">
     <?php foreach ($Personajes as $Personaje): ?>
+    <li>
     <div class="description">
         <div class="photo" ><img class="actors" src="/images/<?php echo $Personaje->getPhoto() ?>" alt="<?php echo $Personaje->getName() ?>"/></div>
         <div class="details">
@@ -12,9 +13,9 @@
         <p class="see-more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Saber m&aacute;s...</a></p>
         </div>
     </div>
+    </li>
     <?php endforeach; ?>
 </div>
-
 
 
 
