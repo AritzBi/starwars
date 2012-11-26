@@ -9874,3 +9874,135 @@ Nov 24 01:08:47 symfony [info] {sfWebDebugLogger} Action "personaje/front" 27.28
 Nov 24 01:08:47 symfony [info] {sfWebDebugLogger} View "Success" for "personaje/front" 66.59 ms (1)
 Nov 24 01:08:47 symfony [info] {sfWebDebugLogger} Partial "raza/_list" 1.63 ms (1)
 Nov 24 01:08:47 symfony [info] {sfWebResponse} Send content (54773 o)
+Nov 26 08:34:54 symfony [info] {sfPatternRouting} Match route "raza" (/raza/:slug) for /raza/wookie with parameters array (  'module' => 'raza',  'action' => 'show',  'slug' => 'wookie',)
+Nov 26 08:34:54 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 08:34:54 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 08:34:54 symfony [info] {razaActions} Call "razaActions->executeShow()"
+Nov 26 08:34:54 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Nov 26 08:34:54 symfony [debug] {sfPropelLogger} time:  0.072 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.SLUG='wookie' LIMIT 1
+Nov 26 08:34:54 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/showSuccess.php"
+Nov 26 08:34:54 symfony [debug] {sfPropelLogger} time:  0.101 sec | slow: YES | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `personaje` WHERE personaje.RAZA_ID=2
+Nov 26 08:34:54 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT personaje.ID, personaje.NAME, personaje.SUMMARY, personaje.RAZA_ID, personaje.PHOTO FROM `personaje` WHERE personaje.RAZA_ID=2
+Nov 26 08:34:54 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:34:54 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:34:54 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    8.0 MB | mempeak:    8.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza`
+Nov 26 08:34:54 symfony [info] {sfPartialView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/_list.php"
+Nov 26 08:34:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 08:34:54 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 08:34:54 symfony [info] {sfWebDebugLogger} Configuration 2630.54 ms (9)
+Nov 26 08:34:54 symfony [info] {sfWebDebugLogger} Factories 703.18 ms (1)
+Nov 26 08:34:54 symfony [info] {sfWebDebugLogger} Action "raza/show" 178.98 ms (1)
+Nov 26 08:34:54 symfony [info] {sfWebDebugLogger} View "Success" for "raza/show" 336.29 ms (1)
+Nov 26 08:34:54 symfony [info] {sfWebDebugLogger} Partial "raza/_list" 6.48 ms (1)
+Nov 26 08:34:54 symfony [info] {sfWebResponse} Send content (38216 o)
+Nov 26 08:35:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'personaje',  'action' => 'front',)
+Nov 26 08:35:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 08:35:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 08:35:06 symfony [info] {personajeActions} Call "personajeActions->executeFront()"
+Nov 26 08:35:06 symfony [debug] {sfPropelLogger} time:  0.007 sec | slow:  NO | mem:    6.3 MB | mempeak:    6.3 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Nov 26 08:35:06 symfony [debug] {sfPropelLogger} time:  0.005 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.5 MB | memdelta:      0.0 B | SELECT personaje.ID, personaje.NAME, personaje.SUMMARY, personaje.RAZA_ID, personaje.PHOTO FROM `personaje` GROUP BY personaje.RAZA_ID
+Nov 26 08:35:06 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\modules/personaje/templates/frontSuccess.php"
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=1
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=2
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=3
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.035 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=4
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=5
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=6
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.007 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=7
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=8
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=9
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=10
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.005 sec | slow:  NO | mem:    7.5 MB | mempeak:    7.5 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=11
+Nov 26 08:35:07 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:35:07 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:35:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.8 MB | mempeak:    7.8 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza`
+Nov 26 08:35:07 symfony [info] {sfPartialView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/_list.php"
+Nov 26 08:35:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 08:35:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 08:35:07 symfony [info] {sfWebDebugLogger} Configuration 323.84 ms (10)
+Nov 26 08:35:07 symfony [info] {sfWebDebugLogger} Factories 314.84 ms (1)
+Nov 26 08:35:07 symfony [info] {sfWebDebugLogger} Action "personaje/front" 276.64 ms (1)
+Nov 26 08:35:07 symfony [info] {sfWebDebugLogger} View "Success" for "personaje/front" 571.06 ms (1)
+Nov 26 08:35:07 symfony [info] {sfWebDebugLogger} Partial "raza/_list" 5.77 ms (1)
+Nov 26 08:35:07 symfony [info] {sfWebResponse} Send content (56674 o)
+Nov 26 08:37:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'personaje',  'action' => 'front',)
+Nov 26 08:37:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 08:37:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 08:37:01 symfony [info] {personajeActions} Call "personajeActions->executeFront()"
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.003 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT personaje.ID, personaje.NAME, personaje.SUMMARY, personaje.RAZA_ID, personaje.PHOTO FROM `personaje` GROUP BY personaje.RAZA_ID
+Nov 26 08:37:01 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\modules/personaje/templates/frontSuccess.php"
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=1
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=2
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=3
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=4
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=5
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=6
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=7
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=8
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=9
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=10
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=11
+Nov 26 08:37:01 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:37:01 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:37:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza`
+Nov 26 08:37:01 symfony [info] {sfPartialView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/_list.php"
+Nov 26 08:37:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 08:37:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 08:37:01 symfony [info] {sfWebDebugLogger} Configuration 77.11 ms (9)
+Nov 26 08:37:01 symfony [info] {sfWebDebugLogger} Factories 303.24 ms (1)
+Nov 26 08:37:01 symfony [info] {sfWebDebugLogger} Action "personaje/front" 99.70 ms (1)
+Nov 26 08:37:01 symfony [info] {sfWebDebugLogger} View "Success" for "personaje/front" 120.98 ms (1)
+Nov 26 08:37:01 symfony [info] {sfWebDebugLogger} Partial "raza/_list" 5.00 ms (1)
+Nov 26 08:37:01 symfony [info] {sfWebResponse} Send content (56701 o)
+Nov 26 08:37:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'personaje',  'action' => 'front',)
+Nov 26 08:37:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 08:37:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 08:37:22 symfony [info] {personajeActions} Call "personajeActions->executeFront()"
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    5.5 MB | mempeak:    5.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.011 sec | slow:  NO | mem:    5.8 MB | mempeak:    5.8 MB | memdelta:      0.0 B | SELECT personaje.ID, personaje.NAME, personaje.SUMMARY, personaje.RAZA_ID, personaje.PHOTO FROM `personaje` GROUP BY personaje.RAZA_ID
+Nov 26 08:37:22 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\modules/personaje/templates/frontSuccess.php"
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=1
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=2
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=3
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=4
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=5
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=6
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=7
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=8
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.002 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=9
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=10
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.8 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.ID=11
+Nov 26 08:37:22 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:37:22 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:37:22 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza`
+Nov 26 08:37:22 symfony [info] {sfPartialView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/_list.php"
+Nov 26 08:37:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 08:37:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 08:37:22 symfony [info] {sfWebDebugLogger} Configuration 60.14 ms (9)
+Nov 26 08:37:22 symfony [info] {sfWebDebugLogger} Factories 645.52 ms (1)
+Nov 26 08:37:22 symfony [info] {sfWebDebugLogger} Action "personaje/front" 176.40 ms (1)
+Nov 26 08:37:22 symfony [info] {sfWebDebugLogger} View "Success" for "personaje/front" 203.29 ms (1)
+Nov 26 08:37:22 symfony [info] {sfWebDebugLogger} Partial "raza/_list" 2.84 ms (1)
+Nov 26 08:37:22 symfony [info] {sfWebResponse} Send content (56702 o)
+Nov 26 08:37:29 symfony [info] {sfPatternRouting} Match route "raza" (/raza/:slug) for /raza/humano with parameters array (  'module' => 'raza',  'action' => 'show',  'slug' => 'humano',)
+Nov 26 08:37:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Nov 26 08:37:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Nov 26 08:37:29 symfony [info] {razaActions} Call "razaActions->executeShow()"
+Nov 26 08:37:29 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Nov 26 08:37:29 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:    6.0 MB | mempeak:    6.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza` WHERE raza.SLUG='humano' LIMIT 1
+Nov 26 08:37:29 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/showSuccess.php"
+Nov 26 08:37:30 symfony [debug] {sfPropelLogger} time:  0.039 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `personaje` WHERE personaje.RAZA_ID=1
+Nov 26 08:37:30 symfony [debug] {sfPropelLogger} time:  0.004 sec | slow:  NO | mem:    6.5 MB | mempeak:    6.8 MB | memdelta:      0.0 B | SELECT personaje.ID, personaje.NAME, personaje.SUMMARY, personaje.RAZA_ID, personaje.PHOTO FROM `personaje` WHERE personaje.RAZA_ID=1
+Nov 26 08:37:30 symfony [info] {sfPHPView} Decorate content with "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:37:30 symfony [info] {sfPHPView} Render "C:\wamp\www\starwars\apps\frontend\templates/layout.php"
+Nov 26 08:37:30 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    7.0 MB | mempeak:    7.0 MB | memdelta:      0.0 B | SELECT raza.ID, raza.NAME, raza.SLUG FROM `raza`
+Nov 26 08:37:30 symfony [info] {sfPartialView} Render "C:\wamp\www\starwars\apps\frontend\modules/raza/templates/_list.php"
+Nov 26 08:37:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Nov 26 08:37:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Nov 26 08:37:30 symfony [info] {sfWebDebugLogger} Configuration 133.09 ms (9)
+Nov 26 08:37:30 symfony [info] {sfWebDebugLogger} Factories 416.32 ms (1)
+Nov 26 08:37:30 symfony [info] {sfWebDebugLogger} Action "raza/show" 216.87 ms (1)
+Nov 26 08:37:30 symfony [info] {sfWebDebugLogger} View "Success" for "raza/show" 409.29 ms (1)
+Nov 26 08:37:30 symfony [info] {sfWebDebugLogger} Partial "raza/_list" 12.03 ms (1)
+Nov 26 08:37:30 symfony [info] {sfWebResponse} Send content (42414 o)

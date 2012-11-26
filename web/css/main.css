@@ -4,6 +4,41 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
+.banner {
+    border-radius:17px 17px 17px 17px;
+}
+
+.hidden {
+    display:none;
+}
+
+.actors {
+    width:200px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.photo {
+    float:left;
+    display:inline;
+}
+
+.details {
+    float:left;
+    display:inline;
+    margin-left:10px;
+    width:370px;
+}
+
+.description {
+    float:left;
+    display:block;
+    position:relative;
+    margin-bottom:25px;
+}
+
+.see-more {
+    text-align:right;
+}
 
 body {
 	margin: 0;

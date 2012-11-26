@@ -22,6 +22,9 @@ Released   : 20110412
 <?php include_metas() ?>
 <?php include_stylesheets() ?>
 <?php include_javascripts() ?>
+<!--<script>
+    $("#slider").toggle("drop",500);
+</script>-->
 </head>
 <body>
 <div id="wrapper">
@@ -39,7 +42,7 @@ Released   : 20110412
 		</div>
 	</div>
 	<!-- end #header -->
-	<div id="splash"><img src="/images/swheader.jpg" width="960" height="301" alt="" /></div>
+	<div id="splash"><img class="banner" src="/images/swheader.jpg" width="960" height="301" alt="" /></div>
 	<div id="page">
 		<div id="content">
 			<?php echo $sf_content ?>
