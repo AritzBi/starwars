@@ -49,10 +49,6 @@ $(document).ready(function()    {
 <body>
 <div id="wrapper">
 	<div id="header" class="container">
-		<div id="logo">
-			<h1><a href="<?php echo url_for('@homepage') ?>">Star Wars </a></h1>
-			<p>template design by <a href="http://www.freecsstemplates.org">FCT</a></p>
-		</div>
 		<div id="menu">
 			<ul>
 				<li class="current_page_item"><a href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></a></li>
