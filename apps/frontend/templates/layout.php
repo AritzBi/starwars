@@ -22,9 +22,9 @@ Released   : 20110412
 <?php include_metas() ?>
 <?php include_stylesheets() ?>
 <?php include_javascripts() ?>
-<!--<script>
+<script>
     $("#slider").toggle("drop",500);
-</script>-->
+</script>
 </head>
 <body>
 <div id="wrapper">
