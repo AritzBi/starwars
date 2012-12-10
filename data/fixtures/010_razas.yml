@@ -1,13 +1,57 @@
 # data/fixtures/010_razas.yml
 Raza:
-  humano:        { name: Humano, slug: humano }
-  wookiee:       { name: Wookiee, slug: wookie}
-  zabrak:        { name: Zabrak, slug: zabrak}
-  gungan:        { name: Gungan, slug: gungan}
-  androide:      { name: Androide, slug: androide}
-  neimoidiano:   { name: Neimoidiano, slug: neimoidiano}
-  desconocido:   { name: Desconocido, slug: desconocido}
-  hutt:   		 { name: Hutt, slug: hutt}
-  calamari:   	 { name: Mon Calamari, slug: calamari}
-  cereano:       { name: Cereano, slug: cereano}
-  toydariano:    { name: Toydariano, slug: toydariano}
+  humano:
+    name: Humano 
+    summary:     |
+        Los humanos eran la especie más numerosa y políticamente dominante de la Galaxia, con millones de colonias de todos los tamaños por toda la Galaxia. Se cree que la especie se originó en la capital de la Galaxia, Coruscant, pero se les podía encontrar en cualquier parte involucrados en numerosas actividades como: mercenarios, criminales, contrabandistas, comerciantes, asesinos, granjeros entre otras. Debido a que los humanos eran la especie más común de la Galaxia, se les consideraba como un estándar o baremo para comparar la biología, psicología y cultura de otras especies.
+    slug: humano 
+  wookiee:       
+    name: Wookiee 
+    summary:     |
+        Los wookiees, que ellos lo traducen como la Gente de los árboles, eran una especie de peludos humanoides bípedos que habitaban en el planeta Kashyyyk. Uno de los miembros más destacados de la especie fue Chewbacca, amigo y copiloto de Han Solo, que desempeñó un papel vital en la Guerra Civil Galáctica.
+    slug: wookie
+  zabrak:        
+    name: Zabrak
+    summary:     |
+        Los zabrak son una especie humanoide originaria del planeta Iridonia, un planeta localizado en el Borde Medio conocido por su inhóspito terreno y violenta vida. Los zabrak cuentan con fuerte autodeterminación y necesidad dominante para la independencia. Tienen gran poder de manipulación de la Fuerza. Hablan particularmente el zabrakí. Existen diversas razas de zabrakíes y, aunque todas se caracterizan por poseer proyecciones óseas a manera de pequeños cuernos en el cráneo, el número y patrón de estos varía según la raza. 
+    slug: zabrak
+  gungan:        
+    name: Gungan
+    summary:     |
+        Los gungan(s) o gunganos son una especie inteligente con grandes orejas y con rostro y piel semejante a la de los anfibios. Los gungan habitan en enormes ciudades submarinas en lagos del planeta Naboo. Entre los más sobresalientes podemos encontrar a Jar Jar Binks, Capitán Tarpals y Jefe Nass.
+    slug: gungan
+  androide:      
+    name: Androide
+    summary:     |
+        Droide, acortamiento de Androide, es el término dado a los robots: seres mecánicos que poseen inteligencia artificial. Eran utilizados en una variedad de roles y ambientes considerados muy cansados o muy peligrosos para los seres humanos y para las otras especies. Los droides también eran usados en campos que requerían una extensa especialización y conocimiento, tales como los droides médicos y los droides astromecánicos.
+    slug: androide
+  neimoidiano:    
+    name: Neimoidiano
+    summary:     |
+        El neimoidiano es una especie inteligente de piel arrugada y verde o a veces es casi marrón. Sus ojos son anchos y rojos con un extraño iris ondulado. Eran originarios del planeta Neimoidia y de Cato Neimoidia.
+    slug: neimoidiano
+  desconocido:   
+    name: Desconocido
+    summary:     |
+        El verdadero nombre de la especie de Yoda es realmente desconocido, no está registrado y también se le conoce como especie tridáctil desconocida, por tener manos con tres dedos y sus pies en forma anisodáctil. Lo que era más conocido de esta especie es que llegan a vivir por cientos de años. Entre otras características estaban sus dientes puntiagudos que sugieren una dieta carnívora y su piel era verde, asi como su sangre.
+    slug: desconocido
+  hutt: 
+    name: Hutt 
+    summary:     |
+        Los hutt son una especie de gasterópodos con brazos pequeños, bocas profundas y grandes ojos, que controlan un gran territorio espacial, llamado el Espacio Hutt. La especie es originaria del planeta Varl, pero adoptaron a Nal Hutta como su mundo hogar.
+    slug: hutt
+  calamari: 
+    name: Mon Calamari 
+    summary:     |
+        La especie mon calamari (también conocida como calamari, calamarianos, mon cal, mon calamarianos, o rara vez mon cala) era una de las especies inteligentes indígenas del planeta Dac.
+    slug: calamari
+  cereano: 
+    name: Cereano 
+    summary:     |
+        Los cereanos fueron una especie de mamíferos humanoides cultos y sofisticados que provenían del planeta Cerea en el Borde Medio. Tenían cabezas alargadas, que albergaba grandes cerebros binarios, lo que les permitía centrarse en muchas cosas al mismo tiempo. Aparte de esta característica única, los cereanos eran físicamente similares a los humanos, a pesar de que poseía un corazón más, que ayudaba a la circulación de sangre adicional para sus cerebros.
+    slug: cereano
+  toydariano: 
+    name: Toydariano 
+    summary:     |
+        Los toydarianos eran una raza de seres alados de Toydaria. Eran de voluntad firme, resistentes a los trucos mentales de los Jedi. Ellos tenían la reputación de ser tacaños y con mal genio. Los toydarianos supuestamente eran distantes con las relaciones con los Hutts debido a la proximidad del mundo Nal Hutta a su casa, así como su similar resistencia a los trucos mentales.
+    slug: toydariano

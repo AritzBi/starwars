@@ -1,12 +1,16 @@
-<h1>Personajes <?php echo $raza->getName() ?>s</h1> 
-<hr/>
+<h1 class="title">Personajes <?php echo $raza->getName() ?>s</h1> 
+<p style="margin-bottom:10px;"><?php echo $raza->getSummary() ?></p>
 <?php if($raza->countPersonajes() > 0): ?>
- <?php foreach ($raza->getPersonajes() as $Personaje): ?>
-   <h1><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><?php echo $Personaje->getName() ?></a></h1>
-   <h3><?php echo $Personaje->getSummary() ?></h3>
-   <img src="/images/<?php echo $Personaje->getPhoto() ?>" alt ="<?php echo $Personaje->getName() ?>"/>
-   <p><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Read it...</a></p>
- <?php endforeach; ?>
+     <?php foreach ($raza->getPersonajes() as $Personaje): ?>
+     <div class="description">
+     <div class="photo" ><img class="actors" src="/images/<?php echo $Personaje->getPhoto() ?>" alt="<?php echo $Personaje->getName() ?>"/></div>
+     <div class="details">
+       <h1><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><?php echo $Personaje->getName() ?></a></h1>
+       <p><?php echo $Personaje->getSummary() ?></p>
+       <p style="text-align:right;"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Saber m&aacute;s...</a></p>
+     </div>
+     </div>
+     <?php endforeach; ?>
  <?php else: ?> <br/>
- <p>There are <strong>no</strong> personajes in this raza.</p>
+    <p>There are <strong>no</strong> personajes in this raza.</p>
  <?php endif; ?> 

@@ -17,6 +17,12 @@ raza:
   param:    { module: raza, action: show }
   options:  { model: Raza, type: object }
   
+pelicula:
+  url:      /pelicula/:slug
+  class:    sfPropelRoute
+  param:    { module: pelicula, action: showslug }
+  options:  { model: Pelicula, type: object }
+  
 rss:
   url:    /rss/all
   param: { module: pelicula, action: rss, sf_format: xml }

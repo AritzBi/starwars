@@ -24,6 +24,10 @@ class peliculaActions extends sfActions
     $this->Pelicula = PeliculaPeer::retrieveByPk($request->getParameter('id'));
     $this->forward404Unless($this->Pelicula);
   }
+    public function executeShowslug(sfWebRequest $request)
+  {
+    $this->Pelicula = $this->getRoute()->getObject();
+  }
 
   public function executeNew(sfWebRequest $request)
   {

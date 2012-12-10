@@ -228,6 +228,8 @@ COMMON SLIDER STYLING
 	display: block;
 	overflow: visible !important;
 	position: relative;
+    height:500px;
+    width:590px;
 }
 /* anythingSlider viewport window */
 .anythingSlider .anythingWindow {
@@ -235,6 +237,7 @@ COMMON SLIDER STYLING
 	position: relative;
 	width: 100%;
 	height: 100%;
+    margin-left:-45px;
 }
 /* anythingSlider base (original element) */
 .anythingSlider .anythingBase {

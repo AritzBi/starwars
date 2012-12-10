@@ -10,6 +10,7 @@ propel:
   raza:
     id:           ~
     name:         { type: varchar(255), required: true, index: unique }
+    summary:      { type: longvarchar, required: true}
     slug:         { type: varchar(255), required: true, index: unique } 
   personaje:
     id:           ~

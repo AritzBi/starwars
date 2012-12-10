@@ -30,6 +30,7 @@ $(document).ready(function()    {
     $(".hidden").toggle('slide',3500);
     
     $('.anythingSlider').anythingSlider({
+        theme: "construction",
         easing: "swing",                // Anything other than "linear" or "swing" requires the easing plugin
         autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not
         startStopped: false,            // If autoPlay is on, this can force it to start stopped
@@ -42,6 +43,13 @@ $(document).ready(function()    {
         stopText: "Stop",               // Stop text
         navigationFormatter: null       // Details at the top of the file on this use (advanced use)
     });
+        
+    $('li.raza').click(function() {
+        var id=$(this).attr("id");
+        id="div#"+id;
+        $(id).slideToggle();
+    });
+    
     });
 </script>
 
@@ -54,6 +62,7 @@ $(document).ready(function()    {
 				<li class="current_page_item"><a href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></a></li>
 				<li><a href="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></a></li>
 				<li><a href="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></a></li>
+                <li><a href="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></a></li>
 			</ul>
 		</div>
 	</div>
@@ -68,9 +77,15 @@ $(document).ready(function()    {
 		<div id="sidebar">
 			<ul>
 				<li>
-					<h2><?php echo __("Razas") ?></h2>
+					<div id="razas" class="sidebar"><h2><?php echo __("Razas") ?></h2></div>
 					<ul>
 			<?php include_partial('raza/list', array('razas' => RazaPeer::doSelect(new Criteria()))) ?> 
+					</ul>
+				</li>
+                <li>
+					<div id="peliculas" class="sidebar"><h2><?php echo __("Peliculas") ?></h2></div>
+					<ul>
+			<?php include_partial('pelicula/list', array('peliculas' => PeliculaPeer::doSelect(new Criteria()))) ?> 
 					</ul>
 				</li>
 			</ul>

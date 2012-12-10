@@ -86,8 +86,8 @@
 
 			base.adj = (o.infiniteSlides) ? 0 : 1; // adjust page limits for infinite or limited modes
 			base.adjustMultiple = 0;
-			base.width = base.$el.width();
-			base.height = base.$el.height();
+			base.width = 580;
+			base.height = 410;
 			base.outerPad = [ base.$wrapper.innerWidth() - base.$wrapper.width(), base.$wrapper.innerHeight() - base.$wrapper.height() ];
 			if (o.playRtl) { base.$wrapper.addClass('rtl'); }
 

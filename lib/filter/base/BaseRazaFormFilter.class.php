@@ -12,13 +12,15 @@ abstract class BaseRazaFormFilter extends BaseFormFilterPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'name' => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'slug' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'name'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'summary' => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'slug'    => new sfWidgetFormFilterInput(array('with_empty' => false)),
     ));
 
     $this->setValidators(array(
-      'name' => new sfValidatorPass(array('required' => false)),
-      'slug' => new sfValidatorPass(array('required' => false)),
+      'name'    => new sfValidatorPass(array('required' => false)),
+      'summary' => new sfValidatorPass(array('required' => false)),
+      'slug'    => new sfValidatorPass(array('required' => false)),
     ));
 
     $this->widgetSchema->setNameFormat('raza_filters[%s]');
@@ -36,9 +38,10 @@ abstract class BaseRazaFormFilter extends BaseFormFilterPropel
   public function getFields()
   {
     return array(
-      'id'   => 'Number',
-      'name' => 'Text',
-      'slug' => 'Text',
+      'id'      => 'Number',
+      'name'    => 'Text',
+      'summary' => 'Text',
+      'slug'    => 'Text',
     );
   }
 }

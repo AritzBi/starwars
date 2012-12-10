@@ -11,7 +11,5 @@
 <?php 	$Participaciones = $Pelicula->getParticipacions();?>       
            <?php foreach ($Participaciones as $Participacion): ?>
            <a href="<?php echo url_for('personaje/show?id='.$Participacion->getPersonaje()->getId()) ?>"><img  src="/images/<?php echo $Participacion->getPersonaje()->getPhoto() ?>" class="sPhoto" alt="<?php echo $Participacion->getPersonaje()->getName() ?>" /></a>
-<?php endforeach; ?>
-
+           <?php endforeach; ?>
 <hr />
-

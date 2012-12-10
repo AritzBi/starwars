@@ -15,6 +15,10 @@ class razaActions extends sfActions
   *
   * @param sfRequest $request A request object
   */
+    public function executeIndex(sfWebRequest $request)
+  {
+    $this->Razas = RazaPeer::doSelect(new Criteria());
+  }
   public function executeShow(sfWebRequest $request)
   {
     $this->raza = $this->getRoute()->getObject();

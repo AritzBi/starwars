@@ -35,6 +35,7 @@ CREATE TABLE `raza`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
 	`name` VARCHAR(255)  NOT NULL,
+	`summary` TEXT  NOT NULL,
 	`slug` VARCHAR(255)  NOT NULL,
 	PRIMARY KEY (`id`),
 	UNIQUE KEY `raza_U_1` (`name`),

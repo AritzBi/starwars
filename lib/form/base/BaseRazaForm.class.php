@@ -14,15 +14,17 @@ abstract class BaseRazaForm extends BaseFormPropel
   public function setup()
   {
     $this->setWidgets(array(
-      'id'   => new sfWidgetFormInputHidden(),
-      'name' => new sfWidgetFormInputText(),
-      'slug' => new sfWidgetFormInputText(),
+      'id'      => new sfWidgetFormInputHidden(),
+      'name'    => new sfWidgetFormInputText(),
+      'summary' => new sfWidgetFormTextarea(),
+      'slug'    => new sfWidgetFormInputText(),
     ));
 
     $this->setValidators(array(
-      'id'   => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
-      'name' => new sfValidatorString(array('max_length' => 255)),
-      'slug' => new sfValidatorString(array('max_length' => 255)),
+      'id'      => new sfValidatorChoice(array('choices' => array($this->getObject()->getId()), 'empty_value' => $this->getObject()->getId(), 'required' => false)),
+      'name'    => new sfValidatorString(array('max_length' => 255)),
+      'summary' => new sfValidatorString(),
+      'slug'    => new sfValidatorString(array('max_length' => 255)),
     ));
 
     $this->validatorSchema->setPostValidator(
