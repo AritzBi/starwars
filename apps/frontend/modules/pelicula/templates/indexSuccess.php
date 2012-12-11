@@ -6,10 +6,10 @@
             <div class="description">
             <img src="/images/<?php echo $Pelicula->getPhoto() ?>" class="mPhoto" alt="<?php echo $Pelicula->getName() ?>"/>
 			<div class="details">
-            <p class="meta"><span class="date">Fecha de estreno: <?php echo $Pelicula->getPremiereDate() ?></span></p>
-			<div style="clear: both;">&nbsp;</div>
+            <p class="meta"><span class="date" style="margin-left:10px; color:rgb(213,177,99);">Fecha de estreno:</span> <?php echo $Pelicula->getPremiereDate() ?></p>
+			<div style="clear: both;"></div>
 				<div class="entry">
-					<?php echo $Pelicula->getSummary() ?>
+					<p style="margin-top:-20px;"><span class="attr">Sinopsis: </span><?php echo $Pelicula->getSummary() ?></p>
 					<p class="links"><a href="<?php echo url_for('pelicula/show?id='.$Pelicula->getId()) ?>" class="more">Saber m&aacute;s</a></p>
 				</div>
             </div>

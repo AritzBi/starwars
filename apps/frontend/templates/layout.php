@@ -24,10 +24,17 @@ Released   : 20110412
 <?php include_javascripts() ?>
 <script>
 $(document).ready(function()    {
-    $("#slider").click(function() {
-        alert("funciona");
-    });
     $(".hidden").toggle('slide',3500);
+        
+    /*$('li.raza').click(function() {
+        var id=$(this).attr("id");
+        id="div#"+id;
+        $(id).slideToggle();
+    });*/
+    
+    $('span#frontHome').hover(function()    {
+        $(this).toggleClass("titleHover");
+    });
     
     $('.anythingSlider').anythingSlider({
         theme: "construction",
@@ -42,39 +49,49 @@ $(document).ready(function()    {
         startText: "Start",             // Start text
         stopText: "Stop",               // Stop text
         navigationFormatter: null       // Details at the top of the file on this use (advanced use)
-    });
+        });
         
-    /*$('li.raza').click(function() {
-        var id=$(this).attr("id");
-        id="div#"+id;
-        $(id).slideToggle();
-    });*/
-    
-    $("ul.anythingSlider").each(function () {
-		var href = $(this).attr("href");
-		href = href.replace("front", "frontAjax");
-		$(this).ajax({
-		   content: {
-		      url: href,
-		      method: 'get'
-		   },
-		   style: { name: 'dark', tip: true },
-		   show: 'mouseover',
-		   hide: 'mouseout'
-		});
-	} );
-    
-    $.ajax(  
-            {  
-                type        : "post",                                               // el tipo de consulta, puede ser "get" y "post".  
-                url         : "alumnos.php",                                // el modulo que nos proveera de la informacion que solicitamos  
-                data        : data,                                                 // los datos relacionados a la consulta Ajax  
-                context : { "cedula" : cedula },                // un contexto u objeto con informacion complementaria, este no viaja al servidor  
-                error       : callback_error,                               // que rutina se ejecuta si esto falla  
-                success : recuperarAlumnos_callback         // que rutina se ejecuta si esto funciona   
-            });  
-    
+        $('span.ajax').click(function () { 
+            $.ajax({
+                type: "GET",
+                url: $(this).attr("href"),
+                data: "html",
+                success: function(data){
+                    $('#content').html(data);
+                }
+            });
+        });
+         
+        
+        
+    $(this).ajaxComplete(function(){
+        $('.anythingSlider').anythingSlider({
+        theme: "construction",
+        easing: "swing",                // Anything other than "linear" or "swing" requires the easing plugin
+        autoPlay: true,                 // This turns off the entire FUNCTIONALY, not just if it starts running or not
+        startStopped: false,            // If autoPlay is on, this can force it to start stopped
+        delay: 3000,                    // How long between slide transitions in AutoPlay mode
+        animationTime: 600,             // How long the slide transition takes
+        hashTags: true,                 // Should links change the hashtag in the URL?
+        buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
+        pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
+        startText: "Start",             // Start text
+        stopText: "Stop",               // Stop text
+        navigationFormatter: null       // Details at the top of the file on this use (advanced use)
+        });
+        
+        $('span.ajax').click(function () { 
+            $.ajax({
+                type: "GET",
+                url: $(this).attr("href"),
+                data: "html",
+                success: function(data){
+                    $('#content').html(data);
+                }
+            });
+        });
     });
+ });
 </script>
 
 </head>
@@ -83,10 +100,10 @@ $(document).ready(function()    {
 	<div id="header" class="container">
 		<div id="menu">
 			<ul>
-				<li class="current_page_item"><a href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></a></li>
-				<li><a href="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></a></li>
-				<li><a href="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></a></li>
-                <li><a href="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></a></li>
+				<li class="current_page_item"><span class="ajax" id="frontHome" href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></span></li>
+				<li><span class="ajax" id="frontPersonaje" href="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></span></li>
+				<li><span class="ajax" id="frontPelicula" href="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></span></li>
+                <li><span class="ajax" id="frontRaza" href="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></span></li>
 			</ul>
 		</div>
 	</div>

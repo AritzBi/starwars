@@ -4,6 +4,18 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
+.titleHover  {
+    color:rgb(178,60,28);
+    font-size:36px;
+}
+
+span.ajax {
+    padding: 10px 15px 15px;
+    color:rgb(213,177,99);
+    font-size:14px;
+    font-weight:bold;
+}
+
 span.attr    {
     color: rgb(213,177,99);
 }
@@ -296,9 +308,9 @@ a:hover {
 }
 
 .post .title {
-	height: 100px;
 	padding: 7px 0px 0px 0px;
 	letter-spacing: -1px;
+    font-size:30px;
 }
 
 .post .title a {
@@ -326,8 +338,6 @@ a:hover {
 }
 
 .post .entry {
-	padding: 0px 0px 20px 0px;
-	padding-bottom: 20px;
 	text-align: justify;
     float:left;
     display:inline;
@@ -564,7 +574,7 @@ img.sPhoto{
 }
 
 img.mPhoto{
-    width: 200px;
+    width: 175px;
     float:left;
     display:inline;
 }
