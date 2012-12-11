@@ -44,11 +44,35 @@ $(document).ready(function()    {
         navigationFormatter: null       // Details at the top of the file on this use (advanced use)
     });
         
-    $('li.raza').click(function() {
+    /*$('li.raza').click(function() {
         var id=$(this).attr("id");
         id="div#"+id;
         $(id).slideToggle();
-    });
+    });*/
+    
+    $("ul.anythingSlider").each(function () {
+		var href = $(this).attr("href");
+		href = href.replace("front", "frontAjax");
+		$(this).ajax({
+		   content: {
+		      url: href,
+		      method: 'get'
+		   },
+		   style: { name: 'dark', tip: true },
+		   show: 'mouseover',
+		   hide: 'mouseout'
+		});
+	} );
+    
+    $.ajax(  
+            {  
+                type        : "post",                                               // el tipo de consulta, puede ser "get" y "post".  
+                url         : "alumnos.php",                                // el modulo que nos proveera de la informacion que solicitamos  
+                data        : data,                                                 // los datos relacionados a la consulta Ajax  
+                context : { "cedula" : cedula },                // un contexto u objeto con informacion complementaria, este no viaja al servidor  
+                error       : callback_error,                               // que rutina se ejecuta si esto falla  
+                success : recuperarAlumnos_callback         // que rutina se ejecuta si esto funciona   
+            });  
     
     });
 </script>

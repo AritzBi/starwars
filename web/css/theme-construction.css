@@ -69,7 +69,7 @@ Default state (no keyboard focus)
 */
 /* slider window - top & bottom borders, active state */
 .anythingSlider-construction.activeSlider .anythingWindow {
-	border-color: #d0aa0d;
+	border-color: rgb(73,73,73);
 }
 
 /************************
@@ -153,6 +153,8 @@ Default state (no keyboard focus)
 	text-decoration: none;
 	text-align: center;
 	outline: 0;
+    background: rgb(213,177,99);
+    border-radius:4px;
 }
 
 .anythingSlider-construction .anythingControls span {
@@ -197,6 +199,8 @@ Default state (no keyboard focus)
 	text-decoration: none;
 	z-index: 100;
 	outline: 0;
+    background:rgb(73,73,73);
+    border-radius:4px;
 }
 /***********************
 IE8 AND OLDER STYLING

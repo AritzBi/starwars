@@ -4,6 +4,10 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
+span.attr    {
+    color: rgb(213,177,99);
+}
+
 div.sidebar {
     height: 38px;
     border-radius: 10px 10px 10px 10px;
@@ -60,6 +64,7 @@ h1.title    {
     display:block;
     position:relative;
     margin-bottom:25px;
+    margin-top:10px;
 }
 
 .see-more {
@@ -97,6 +102,7 @@ h3 {
 p, ul, ol {
 	margin-top: 0;
 	line-height: 180%;
+    text-align:justify;
 }
 
 ul, ol {

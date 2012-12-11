@@ -20,6 +20,15 @@ class personajeActions extends sfActions
     $criteria->addGroupByColumn(PersonajePeer::RAZA_ID);
     $this->Personajes = PersonajePeer::doSelect($criteria);
   }
+  
+  public function executeFrontAjax(sfWebRequest $request)
+  {
+    if ($request->isXmlHttpRequest())
+    {
+      $this->Personajes = PersonajePeer::retrieveByPk($request->getParameter('id'));
+      $this->forward404Unless($this->Personajes);
+    }
+  }
 
   public function executeShow(sfWebRequest $request)
   {

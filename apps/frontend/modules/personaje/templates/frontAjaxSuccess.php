@@ -1,7 +1,3 @@
-<h1 class="title">Star Wars</h1>
-<p>Bienvenidos a una de las miles páginas fans que la popular saga Star Wars posee alrededor del mundo. Aquí podreis encontrar todo tipo de contenido relacionado con los personajes, películas, libros... No dudeis en formar parte de este gran proyecto y participar en toda ocasión posible, espero que disfruteis de la experiencia.</p>
-<p>A lo largo de las películas de Star Wars y sus múltiples libros podemos encontrar numerosos personajes, la lista podría ser infinita por lo que hemos seleccionado un personaje por cada raza de las once que conforman el elenco.</p>
-<br/>    
     <ul class="anythingSlider">
     <?php foreach ($Personajes as $Personaje): ?>
     <li>
