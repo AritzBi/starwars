@@ -133,14 +133,14 @@ $(document).ready(function()    {
 		<div id="sidebar">
 			<ul>
 				<li>
-					<div id="razas" class="sidebar"><h2><?php echo __("Razas") ?></h2></div>
-					<ul>
+					<div id="razas" class="sidebar" style="margin-bottom:2px;"><h2><?php echo __("Razas") ?></h2></div>
+					<ul style="background:rgb(213,177,99);border-radius:6px;font-weight:bold;color:black;">
 			<?php include_partial('raza/list', array('razas' => RazaPeer::doSelect(new Criteria()))) ?> 
 					</ul>
 				</li>
                 <li>
-					<div id="peliculas" class="sidebar"><h2><?php echo __("Peliculas") ?></h2></div>
-					<ul>
+					<div id="peliculas" class="sidebar" style="margin-bottom:2px;margin-top:15px;"><h2><?php echo __("Peliculas") ?></h2></div>
+					<ul style="background:rgb(213,177,99);border-radius:6px;font-weight:bold;color:black;">
 			<?php include_partial('pelicula/list', array('peliculas' => PeliculaPeer::doSelect(new Criteria()))) ?> 
 					</ul>
 				</li>

@@ -8,7 +8,7 @@
             <br/>
         <p><span class="attr"><strong>Resumen:</strong></span> <?php echo $Personaje->getSummary() ?></p>
         <p><span class="attr"><strong>Raza:</strong></span> <?php echo $Personaje->getRaza() ?></p>
-        <p class="see-more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Saber más...</a></p>
+        <span class="more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">More</a></span>
         </div>
     </div>
     <?php endforeach; ?>
