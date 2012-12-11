@@ -22,7 +22,7 @@ Released   : 20110412
 <?php include_metas() ?>
 <?php include_stylesheets() ?>
 <?php include_javascripts() ?>
-<script>
+<script type="text/javascript">
 $(document).ready(function()    {
     $(".hidden").toggle('slide',3500);
         
@@ -32,8 +32,12 @@ $(document).ready(function()    {
         $(id).slideToggle();
     });*/
     
-    $('span#frontHome').hover(function()    {
+    /*$('span.ajax').hover(function()    {
         $(this).toggleClass("titleHover");
+    });*/
+    
+    $('.ajax').hover(function() {
+        $(this).toggleClass("span#titleHover");
     });
     
     $('.anythingSlider').anythingSlider({
@@ -54,7 +58,7 @@ $(document).ready(function()    {
         $('span.ajax').click(function () { 
             $.ajax({
                 type: "GET",
-                url: $(this).attr("href"),
+                url: $(this).attr("title"),
                 data: "html",
                 success: function(data){
                     $('#content').html(data);
@@ -65,6 +69,7 @@ $(document).ready(function()    {
         
         
     $(this).ajaxComplete(function(){
+        
         $('.anythingSlider').anythingSlider({
         theme: "construction",
         easing: "swing",                // Anything other than "linear" or "swing" requires the easing plugin
@@ -83,7 +88,7 @@ $(document).ready(function()    {
         $('span.ajax').click(function () { 
             $.ajax({
                 type: "GET",
-                url: $(this).attr("href"),
+                url: $(this).attr("title"),
                 data: "html",
                 success: function(data){
                     $('#content').html(data);
@@ -98,12 +103,22 @@ $(document).ready(function()    {
 <body>
 <div id="wrapper">
 	<div id="header" class="container">
+    <div id="social">
+    <p><a href="https://twitter.com/aritzbi" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @aritzbi</a>
+    <div class="fb-like" data-href="http://www.facebook.com/pages/SWIWeb/296437283802018?fref=ts" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div></p>
+    </div>
+    
 		<div id="menu">
 			<ul>
-				<li class="current_page_item"><span class="ajax" id="frontHome" href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></span></li>
-				<li><span class="ajax" id="frontPersonaje" href="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></span></li>
-				<li><span class="ajax" id="frontPelicula" href="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></span></li>
-                <li><span class="ajax" id="frontRaza" href="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></span></li>
+				<li class="current_page_item"><a id="frontHome" href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></a></li>
+				<li><span class="ajax" id="front" title="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></span></li>
+				<li><span class="ajax" id="front" title="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></span></li>
+                <li><span class="ajax" id="front" title="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></span></li>
+                <?php if($sf_user->isAuthenticated()): ?>
+                <li><span class="login"><a href="<?php echo url_for('/logout') ?>" style="padding: 0px 15px 15px;">Logout</a></span></li>
+                <?php else: ?>
+                <li><span class="login"><a href="<?php echo url_for('/backend_dev.php') ?>" style="padding: 0px 15px 15px;">Login</a></span></li>
+                <?php endif; ?>
 			</ul>
 		</div>
 	</div>

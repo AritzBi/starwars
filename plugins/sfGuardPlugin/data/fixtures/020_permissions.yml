@@ -1,0 +1,8 @@
+sfGuardPermission:
+  basicPermission:
+    name:           basicPermission
+    description:    Basic user permission
+    
+  preferredPermission:
+    name:           preferredPermission
+    description:    Preferred permission

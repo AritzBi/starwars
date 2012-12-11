@@ -12,6 +12,10 @@ class personajeActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     $this->Personajes = PersonajePeer::doSelect(new Criteria());
+    $this->pager=new sfPropelPager('Personaje',sfConfig::get('app_max_pjs'));
+    $this->pager->setCriteria(new Criteria());
+    $this->pager->setPage($request->getParameter('page',1));
+    $this->pager->init();
   }
   
   public function executeFront(sfWebRequest $request)
@@ -19,15 +23,6 @@ class personajeActions extends sfActions
     $criteria = new Criteria();
     $criteria->addGroupByColumn(PersonajePeer::RAZA_ID);
     $this->Personajes = PersonajePeer::doSelect($criteria);
-  }
-  
-  public function executeFrontAjax(sfWebRequest $request)
-  {
-    if ($request->isXmlHttpRequest())
-    {
-      $this->Personajes = PersonajePeer::retrieveByPk($request->getParameter('id'));
-      $this->forward404Unless($this->Personajes);
-    }
   }
 
   public function executeShow(sfWebRequest $request)

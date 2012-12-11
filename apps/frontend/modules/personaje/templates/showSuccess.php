@@ -3,7 +3,7 @@
         <div class="details" >
         <p>Nombre: <?php echo $Personaje->getName() ?></p>
         <p>Resumen: <?php echo $Personaje->getSummary() ?></p>
-        <p>Raza: <?php echo $Personaje->getRazaId() ?></p>
+        <p>Raza: <?php echo $Personaje->getRaza() ?></p>
         </div>
     </div>
 

@@ -33,8 +33,11 @@ Released   : 20120528
 			<li><?php echo link_to('Personaje', '@personaje') ?></li>
 			<li><?php echo link_to('Raza', '@raza') ?></li>
 			<li><?php echo link_to('participacion', '@participacion') ?></li>
+            <li><?php echo link_to('Groups', '@sf_guard_group') ?></li>
+            <li><?php echo link_to('Permissions', '@sf_guard_permission') ?></li>
 			<li><?php echo link_to('Users', '@sf_guard_user') ?></li>
             <li><?php echo link_to('Logout', '@sf_guard_signout') ?></li>
+
 		</ul>
 	</div>
 	<!-- end #menu -->

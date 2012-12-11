@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [main.css,jquery-ui-1.9.2.custom.css,anythingslider.css,theme-cs-portfolio.css,theme-minimalist-round.css,animate.css,theme-construction.css,theme-metallic.css,theme-minimalist-square.css]
 
-  javascripts:    [jquery-1.8.3.js,jquery-ui-1.9.2.custom.js,jquery.anythingslider.fx.js,jquery.anythingslider.js,jquery.anythingslider.video.js,jquery.easing.1.2.js,swfobject.js,swfobject.js]
+  javascripts:    [jquery-1.8.3.js,jquery-ui-1.9.2.custom.js,jquery.anythingslider.fx.js,jquery.anythingslider.js,jquery.anythingslider.video.js,jquery.easing.1.2.js,swfobject.js,swfobject.js,myjs.js]
 
   has_layout:     true
   layout:         layout

@@ -1,0 +1,8 @@
+sfGuardGroup:
+  basicGroup:
+    name:           basicGroup
+    description:    Basic user group
+    
+  preferredGroup:
+    name:           preferredGroup
+    description:    Preferred user group
