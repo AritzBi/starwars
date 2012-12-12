@@ -111,7 +111,8 @@ $(document).ready(function()    {
 	<div id="header" class="container">
     <div id="social">
     <p><a href="https://twitter.com/StarWarsIWeb" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @StarWarsIWeb</a>
-    <div class="fb-like" data-href="http://www.facebook.com/pages/SWIWeb/296437283802018?fref=ts" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div></p>
+    <div class="fb-like" data-href="http://www.facebook.com/pages/SWIWeb/296437283802018?fref=ts" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div>
+    <div class="rss"><a href="/rss/all" ><img src="/images/rss.png" alt="RSS" /></a></div></p>
     </div>
     
 		<div id="menu">
