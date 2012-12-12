@@ -7,7 +7,7 @@
      <div class="details">
        <h1><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><?php echo $Personaje->getName() ?></a></h1>
        <p><?php echo $Personaje->getSummary() ?></p>
-       <p style="text-align:right;"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Saber m&aacute;s...</a></p>
+       <p><a class="more" href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">More</a></p>
      </div>
      </div>
      <?php endforeach; ?>

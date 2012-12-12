@@ -435,7 +435,6 @@ a:hover {
 
 #sidebar li li a {
 	padding: 0px 0px 0px 15px;
-    color: black;
 }
 
 #sidebar h2 {
@@ -454,7 +453,8 @@ a:hover {
 
 #sidebar a {
 	border: none;
-	color: #494949;
+	color: black;
+    font-size:13px;
 }
 
 #sidebar a:hover {

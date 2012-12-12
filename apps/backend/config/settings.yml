@@ -35,7 +35,10 @@ all:
     use_database:           true
     
     # sfGuard
-    enabled_modules: [default, sfGuardAuth, sfGuardUser]
+    enabled_modules: [default, sfGuardAuth, sfGuardUser, sfGuardGroup, sfGuardPermission]
   .actions:
     login_module: sfGuardAuth
     login_action: signin 
+    
+    secure_module: sfGuardAuth
+    secure_action: secure 
