@@ -8,10 +8,10 @@
     <div class="description" >
         <div class="photo" ><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><img class="actors" src="/images/<?php echo $Personaje->getPhoto() ?>" alt="<?php echo $Personaje->getName() ?>"/></a></div>
         <div class="details">
-        <p><span class="attr">Nombre:</span> <?php echo $Personaje->getName() ?></p>
-        <p><span class="attr">Resumen:</span> <?php echo $Personaje->getSummary() ?></p>
-        <p><span class="attr">Raza:</span> <?php echo $Personaje->getRaza() ?></p>
-        <p class="more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Más</a></p>
+        <p><span class="attr"><?php echo __("Nombre") ?>:</span> <?php echo $Personaje->getName() ?></p>
+        <p><span class="attr"><?php echo __("Resumen") ?>:</span> <?php echo $Personaje->getSummary() ?></p>
+        <p><span class="attr"><?php echo __("Raza") ?>:</span> <?php echo $Personaje->getRaza() ?></p>
+        <p class="more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><?php echo __("Mas") ?></a></p>
         </div>
     </div>
     </li>

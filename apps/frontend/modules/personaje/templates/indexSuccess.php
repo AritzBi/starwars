@@ -1,4 +1,4 @@
-<h1>Personajes</h1>
+<h1><?php echo __("Personajes") ?></h1>
 <br/>
     <?php foreach ($pager->getResults() as $Personaje): ?>
     <div class="description">
@@ -6,9 +6,9 @@
         <div class="details">
         <div class="name"><h3><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><?php echo $Personaje->getName() ?></a></h3></div>
             <br/>
-        <p><span class="attr"><strong>Resumen:</strong></span> <?php echo $Personaje->getSummary() ?></p>
-        <p><span class="attr"><strong>Raza:</strong></span> <?php echo $Personaje->getRaza() ?></p>
-        <span class="more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">More</a></span>
+        <p><span class="attr"><strong><?php echo __("Resumen") ?>:</strong></span> <?php echo $Personaje->getSummary() ?></p>
+        <p><span class="attr"><strong><?php echo __("Raza") ?>:</strong></span> <?php echo $Personaje->getRaza() ?></p>
+        <span class="more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>"><?php echo __("Mas") ?></a></span>
         </div>
     </div>
     <?php endforeach; ?>

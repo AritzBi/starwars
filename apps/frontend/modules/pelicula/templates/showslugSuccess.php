@@ -4,14 +4,14 @@
             <img src="/images/<?php echo $Pelicula->getPhoto() ?>" class="mPhoto" alt="<?php echo $Pelicula->getName() ?>"/>
 				<div class="entry">
                     <span><?php echo $Pelicula->getSummary() ?></span>
-                    <br/><br/><p><span  style="color:rgb(213,177,99);"><strong>Fecha de estreno: </strong></span><?php echo $Pelicula->getPremiereDate() ?></p>
+                    <br/><br/><p><span  style="color:rgb(213,177,99);"><strong><?php echo __("Fecha de estreno") ?>: </strong></span><?php echo $Pelicula->getPremiereDate() ?></p>
 				</div>
             </div>
 </div>
 
 <?php 	$Participaciones = $Pelicula->getParticipacions();?>
 <div>
-<h2>Personajes</h2><br/>     
+<h2><?php echo __("Personajes") ?></h2><br/>     
             <?php foreach ($Participaciones as $Participacion): ?>
            <div class="viewport">
             <?php $actual=$Participacion->getPersonaje();?>

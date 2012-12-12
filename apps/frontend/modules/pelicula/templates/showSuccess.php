@@ -4,7 +4,7 @@
             <img src="/images/<?php echo $Pelicula->getPhoto() ?>" class="mPhoto" alt="<?php echo $Pelicula->getName() ?>"/>
 				<div class="entry">
                     <span><?php echo $Pelicula->getSummary() ?></span>
-                    <br/><br/><p><span  style="color:rgb(213,177,99);"><strong>Fecha de estreno: </strong></span><?php echo $Pelicula->getPremiereDate() ?></p>
+                    <br/><br/><p><span  style="color:rgb(213,177,99);"><strong><?php echo __("Fecha de estreno") ?>: </strong></span><?php echo $Pelicula->getPremiereDate() ?></p>
 				</div>
             </div>
 </div>
