@@ -15,7 +15,7 @@ Released   : 20120528
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>Classifieds by FCT</title>
+<title>Panel de Administrador</title>
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet" type="text/css" />
     <?php include_http_metas() ?>
@@ -29,10 +29,10 @@ Released   : 20120528
 	<div id="menu">
 		<ul>
 			<li class="current_page_item"><?php echo link_to('Homepage', '@homepage') ?></li>
-			<li><?php echo link_to('Pelicula', '@pelicula') ?></li>
+			<li><?php echo link_to('Película', '@pelicula') ?></li>
 			<li><?php echo link_to('Personaje', '@personaje') ?></li>
 			<li><?php echo link_to('Raza', '@raza') ?></li>
-			<li><?php echo link_to('participacion', '@participacion') ?></li>
+			<li><?php echo link_to('participación', '@participacion') ?></li>
             <li><?php echo link_to('Groups', '@sf_guard_group') ?></li>
             <li><?php echo link_to('Permissions', '@sf_guard_permission') ?></li>
 			<li><?php echo link_to('Users', '@sf_guard_user') ?></li>

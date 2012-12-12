@@ -11,7 +11,7 @@
         <p><span class="attr">Nombre:</span> <?php echo $Personaje->getName() ?></p>
         <p><span class="attr">Resumen:</span> <?php echo $Personaje->getSummary() ?></p>
         <p><span class="attr">Raza:</span> <?php echo $Personaje->getRaza() ?></p>
-        <p style="text-align:right;"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Saber más...</a></p>
+        <p class="more"><a href="<?php echo url_for('personaje/show?id='.$Personaje->getId()) ?>">Más</a></p>
         </div>
     </div>
     </li>

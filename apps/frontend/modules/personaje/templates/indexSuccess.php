@@ -14,18 +14,18 @@
     <?php endforeach; ?>
 
     <?php if($pager->haveToPaginate()): ?>
-    <img class="prevPage" title="<?php echo url_for('personaje/index') ?>?page=1" src="/images/first.png" alt="First page" />
-    <img class="prevPage" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $pager->getPreviousPage() ?>" src="/images/previous.png" alt="Previous page" />
+    <img class="prevPage" style="cursor:pointer;" title="<?php echo url_for('personaje/index') ?>?page=1" src="/images/first.png" alt="First page" />
+    <img class="prevPage" style="cursor:pointer;" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $pager->getPreviousPage() ?>" src="/images/previous.png" alt="Previous page" />
             
         <?php foreach ($pager->getLinks() as $page): ?>
             <?php if ($page == $pager->getPage()): ?>
                 <?php echo $page ?>
             <?php else: ?>
-                <span class="middle" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $page ?>"><?php echo $page ?></span>
+                <span class="middle" style="cursor:pointer;" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $page ?>"><?php echo $page ?></span>
             <?php endif; ?>
         <?php endforeach; ?>
-    <img class="nextPage" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $pager->getNextPage() ?>" src="/images/next.png" alt="Next page" />
-    <img class="nextPage" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $pager->getLastPage() ?>" src="/images/last.png" alt="Last page" />
+    <img class="nextPage" style="cursor:pointer;" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $pager->getNextPage() ?>" src="/images/next.png" alt="Next page" />
+    <img class="nextPage" style="cursor:pointer;" title="<?php echo url_for('personaje/index') ?>?page=<?php echo $pager->getLastPage() ?>" src="/images/last.png" alt="Last page" />
     <?php endif;?>
     
     

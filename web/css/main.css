@@ -4,6 +4,19 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
+.film   {
+    float:left;
+    margin-top:10px;
+}
+
+#menu a.language   {
+    float:left;
+    display:inline;
+    margin-right:2px;
+    margin-top:-60px;
+    margin-left:600px;
+}
+
 div#social  {
     float:left;
     position:absolute;
@@ -28,6 +41,7 @@ span.ajax {
     color:rgb(213,177,99);
     font-size:14px;
     font-weight:bold;
+    cursor:pointer;
 }
 
 span.attr    {
@@ -42,6 +56,68 @@ div.sidebar {
 
 #participaciones    {
     margin-left:40px;
+}
+
+/* --- Container configuration ---------------------------------------------------------- */
+.viewport {
+    /*border: 3px solid #eee;*/
+    float: left;
+    height: 180px;
+    margin: 0 9px 9px 0;
+    /*overflow: hidden;*/
+    position: relative;
+    width: 180px;
+}
+
+/* This is so that the 2nd thumbnail in each row fits snugly. You will want to add a similar
+   class to the last thumbnail in each row to get rid of the margin-right. */
+.no-margin {
+    margin-right: 0;
+}
+
+/* --- Link configuration that contains the image and label ----------------------------- */
+.viewport a {
+    display: block;
+    position: relative;
+}
+
+.viewport a img {
+    height: 180px;
+    left: 0px;
+    position: relative;
+    top: 0px;
+    width: 180px;
+}
+
+/* --- Label configuration -------------------------------------------------------------- */
+.viewport a span {
+    display: none;
+    font-size: 1.0em;
+    font-weight: bold;
+    height: 120px;
+    padding-top: 50px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    z-index: 100;
+}
+.viewport a span em {
+    display: block;
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+    margin-left: -180px;
+}
+
+.dark-background em {
+        color: #ccc;
 }
 
 h1.title    {

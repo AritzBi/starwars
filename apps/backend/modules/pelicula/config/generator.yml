@@ -15,10 +15,10 @@ generator:
       actions: ~
       fields:  ~
       list:    
-        title: Gestión de Peliculas
+        title: GestiÃ³n de Peliculas
       filter:  ~
       form:    ~
       edit:    
         title: Editando %%name%%
       new:     
-        title: Nueva Película
+        title: Nueva PelÃ­cula

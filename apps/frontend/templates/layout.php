@@ -66,7 +66,13 @@ $(document).ready(function()    {
             });
         });
          
-        
+        $('.viewport').mouseenter(function(e) {
+        $(this).children('a').children('img').animate({ height: '170', left: '0', top: '0', width: '170'}, 100);
+        $(this).children('a').children('span').fadeIn(200);
+        }).mouseleave(function(e) {
+        $(this).children('a').children('img').animate({ height: '180', left: '0', top: '0', width: '180'}, 100);
+        $(this).children('a').children('span').fadeOut(200);
+        });
         
     $(this).ajaxComplete(function(){
         
@@ -104,16 +110,20 @@ $(document).ready(function()    {
 <div id="wrapper">
 	<div id="header" class="container">
     <div id="social">
-    <p><a href="https://twitter.com/aritzbi" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @aritzbi</a>
+    <p><a href="https://twitter.com/StarWarsIWeb" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @StarWarsIWeb</a>
     <div class="fb-like" data-href="http://www.facebook.com/pages/SWIWeb/296437283802018?fref=ts" data-send="true" data-width="450" data-show-faces="true" data-colorscheme="dark"></div></p>
     </div>
     
 		<div id="menu">
+            <div id="languages">
+                <a class="language" href="<?php echo url_for('@homepage').'en' ?>" accesskey="n"><img src="/images/english.png" alt="English" /></a>
+                <a class="language" style="margin-left:635px;" href="<?php echo url_for('@homepage').'es' ?>" accesskey="s"><img src="/images/spain.png" alt="Spanish" /></a>
+            </div>
 			<ul>
 				<li class="current_page_item"><a id="frontHome" href="<?php echo url_for('@homepage') ?>"><?php echo __("Portada") ?></a></li>
-				<li><span class="ajax" id="front" title="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></span></li>
-				<li><span class="ajax" id="front" title="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></span></li>
-                <li><span class="ajax" id="front" title="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></span></li>
+				<li><span class="ajax" title="<?php echo url_for('/personaje') ?>"><?php echo __("Personajes") ?></span></li>
+				<li><span class="ajax" title="<?php echo url_for('/pelicula') ?>"><?php echo __("Peliculas") ?></span></li>
+                <li><span class="ajax" title="<?php echo url_for('/raza') ?>"><?php echo __("Razas") ?></span></li>
                 <?php if($sf_user->isAuthenticated()): ?>
                 <li><span class="login"><a href="<?php echo url_for('/logout') ?>" style="padding: 0px 15px 15px;">Logout</a></span></li>
                 <?php else: ?>
@@ -156,9 +166,6 @@ $(document).ready(function()    {
 	</div>
 </div>
 <div id="footer">
-<span class="left"> <a href="<?php echo url_for('@homepage').'en' ?>" class="g1" accesskey="n"><span>EN</span><br/><?php echo __("English") ?></a> </span>
-<span class="right"> <a href="<?php echo url_for('@homepage').'es' ?>" class="g2" accesskey="s"><span>ES</span><br/><?php echo __("Spanish") ?></a> </span> 
-	<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
 </div>
 <!-- end #footer -->
 </body>
